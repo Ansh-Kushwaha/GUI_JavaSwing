@@ -1,6 +1,7 @@
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
+import java.awt.Font;
 
 public class GUI {
     public void frameTest() {
@@ -52,9 +53,14 @@ public class GUI {
         //frame.pack(); auto resize according to components
     }
 
+    public void buttonTest() {
+        new Button();
+    }
+
     public static void main(String[] args) {
-        GUI Test = new GUI();
+        // GUI Test = new GUI();
         // Test.frameTest();
-        Test.labelTest();
+        // Test.labelTest();
+        new Button();
     }
 }
