@@ -43,7 +43,7 @@ public class Button extends JFrame implements ActionListener{
         this.add(label);
         this.add(button);
     }
-
+    
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == button) {

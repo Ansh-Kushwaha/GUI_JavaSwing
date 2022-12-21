@@ -9,7 +9,7 @@ import javax.swing.border.Border;
 
 public class PokemonLabel {
     public void labelTest() {
-        //JFrame = A new GUI Window
+        // JFrame = A new GUI Window
         JFrame frame = new JFrame();
         frame.setSize(500, 500);
         frame.setResizable(false);
@@ -20,9 +20,9 @@ public class PokemonLabel {
 
         ImageIcon logo = new ImageIcon("images/pokeball.png");
         frame.setIconImage(logo.getImage());
-        //frame.getContentPane().setBackground(new Color(20, 20, 20)); 
+        // frame.getContentPane().setBackground(new Color(20, 20, 20)); 
         
-        //JLabel = a GUI display area for a string, image or both
+        // JLabel = a GUI display area for a string, image or both
         JLabel label = new JLabel(); //create a new label
         ImageIcon p = new ImageIcon(new ImageIcon("images/pikachu.png").getImage().getScaledInstance(350, 360, Image.SCALE_DEFAULT));
         label.setIcon(p); //set image for the label

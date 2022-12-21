@@ -5,13 +5,13 @@ import java.awt.Font;
 
 public class GUI {
     public void frameTest() {
-        //JFrame = A new GUI Window
+        // JFrame = A new GUI Window
         JFrame frame = new JFrame();
         frame.setVisible(true); //make frame visible
         frame.setSize(500, 500); //size of frame 500x500
         frame.setTitle("GUI Test"); //set title of frame
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //exit out of application
-        //frame.setResizable(false); to make the window non-resizable
+        // frame.setResizable(false); to make the window non-resizable
 
         ImageIcon logo = new ImageIcon("images/Icon.png"); //ImageIcon object
         frame.setIconImage(logo.getImage()); //change icon of frame
@@ -19,10 +19,10 @@ public class GUI {
     }
 
     public void labelTest() {
-        //JFrame = A new GUI Window
+        // JFrame = A new GUI Window
         JFrame frame = new JFrame();
         frame.setSize(500, 500);
-        //frame.setResizable(false);
+        // frame.setResizable(false);
         frame.setTitle("You caught a Pikachu!");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -30,9 +30,9 @@ public class GUI {
 
         ImageIcon logo = new ImageIcon("images/pokeball.png");
         frame.setIconImage(logo.getImage());
-        //frame.getContentPane().setBackground(new Color(20, 20, 20)); 
+        // frame.getContentPane().setBackground(new Color(20, 20, 20)); 
         
-        //JLabel = a GUI display area for a string, image or both
+        // JLabel = a GUI display area for a string, image or both
         JLabel label = new JLabel(); //create a new label
         frame.add(label);
         ImageIcon p = new ImageIcon(new ImageIcon("images/pikachu.png").getImage().getScaledInstance(350, 360, Image.SCALE_DEFAULT));
