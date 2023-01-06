@@ -1,3 +1,4 @@
+package src;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -8,12 +9,12 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-public class Button extends JFrame implements ActionListener{
+public class SimpleButton extends JFrame implements ActionListener{
 
     JButton button;
     JLabel label;
 
-    Button(){
+    public SimpleButton(){
         button = new JButton("Click Here!");
         label = new JLabel();
         this.setSize(500, 500);
@@ -52,9 +53,5 @@ public class Button extends JFrame implements ActionListener{
             label.setText("Task Completed.");
             System.out.println("Task completed.");
         }
-    }
-
-    public static void main(String[] args) {
-        new Button();
     }
 }
